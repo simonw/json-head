@@ -16,6 +16,7 @@ INDEX = """<!DOCTYPE html>
     <li><a href="/?url=http://www.yahoo.com/&amp;callback=foo">/?url=http://www.yahoo.com/&amp;callback=foo</a>
     <li><a href="/?url=https://www.google.com/&amp;url=http://www.yahoo.com/">/?url=https://www.google.com/&amp;url=http://www.yahoo.com/</a>
 </ul>
+<p>Source code: <a href="https://github.com/simonw/json-head">https://github.com/simonw/json-head</a></p>
 """
 
 callback_re = re.compile(r'^[a-zA-Z_](\.?[a-zA-Z0-9_]+)+$')
