@@ -51,7 +51,7 @@ async def handle_request(request):
             }], status=400)
         async with aiohttp.ClientSession() as session:
             head_infos = await asyncio.gather(*[
-                asyncio.Task(head(session, url)) for url in urls
+                head(session, url) for url in urls
             ])
             if callback and is_valid_callback(callback):
                 return response.text(
