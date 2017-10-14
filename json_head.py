@@ -44,6 +44,11 @@ async def handle_request(request):
     urls = request.args.getlist('url')
     callback = request.args.get('callback')
     if urls:
+        if len(urls) > 10:
+            return response.json([{
+                'ok': False,
+                'error': 'Max 10 URLs allowed'
+            }], status=400)
         async with aiohttp.ClientSession() as session:
             head_infos = await asyncio.gather(*[
                 asyncio.Task(head(session, url)) for url in urls
