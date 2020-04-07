@@ -10,7 +10,7 @@ app = Sanic(__name__)
 INDEX = """<!DOCTYPE html>
 <title>json-head</title>
 <h1>json-head</h1>
-<p>JSON (and JSON-P) API for running a HEAD request against one or more URLs.
+<p>JSON (and JSON-P) API for running HEAD requests against one or more URLs.
 <ul>
     <li><a href="/?url=http://www.google.com/">/?url=http://www.google.com/</a>
     <li><a href="/?url=http://www.yahoo.com/&amp;callback=foo">/?url=http://www.yahoo.com/&amp;callback=foo</a>
