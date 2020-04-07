@@ -1,4 +1,16 @@
 {
-    "version": 1,
-    "alias": "json-head.now.sh"
+    "version": 2,
+    "name": "json-head",
+    "builds": [
+        {
+            "src": "json_head.py",
+            "use": "@now/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "json_head.py"
+        }
+    ]
 }
