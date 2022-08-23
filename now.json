@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "json_head.py",
-            "use": "@now/python"
+            "use": "@vercel/python"
         }
     ],
     "routes": [
