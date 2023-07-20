@@ -1,2 +1,2 @@
 sanic==20.12.7
-aiohttp==3.7.4
+aiohttp==3.8.5
